@@ -4,7 +4,8 @@ Release:        1%{?dist}
 URL:            https://github.com/regolith-linux/fonts-nerd-fonts
 # The repository holds every family's fonts, too much for a source RPM, so
 # Source0 holds only the paths this spec packages (voulage spec style guide,
-# "Large repositories"). More families become more blocks below.
+# "Large repositories"). More families become more blocks below; add each
+# family's font and fontconfig paths here too, or Source0 will lack them.
 %global source0_paths usr/share/fonts/truetype/bitstreamverasansmono usr/share/fontconfig/conf.avail/30-fonts-nerd-font-bitstreamverasansmono.conf debian/copyright
 Source0:        %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 # The repository has no licence texts besides debian/copyright (MIT); these
